@@ -5,15 +5,14 @@
     box-sizing: border-box;
 }
 
-/* Import the font */
+/* Global styles */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f0f2f5;
 }
 
-/* Container class for width constraint */
+/* Container to center content */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -21,13 +20,12 @@ body {
 
 /* Header styles */
 header {
-    background: #4A90E2;
+    background-color: #333;
     color: #fff;
-    padding: 1rem 0;
-    width: 100%;
+    padding: 10px 0;
     position: fixed;
     top: 0;
-    left: 0;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -38,7 +36,8 @@ header .container {
 }
 
 header .logo {
-    font-size: 2rem;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 header nav ul {
@@ -53,18 +52,97 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
 }
 
 header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Add padding to the body to offset the fixed header */
-body {
-    padding-top: 80px;
+/* Hero section */
+.hero {
+    background-image: url('coverpage.webp');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+    top: 50px;
 }
 
-/* Hero section styles */
-.hero {
-    background: url('coverpage.webp') no-repeat center
+.hero .btn {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hero .btn:hover {
+    background-color: #f4f4f4;
+}
+
+/* Content sections */
+.content {
+    padding: 60px 0;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Services section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.services .service {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    text-decoration: none;
+    color: #333;
+}
+
+.services .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services .service p {
+    font-size: 16px;
+}
+
+.services .service:hover {
+    background-color: #e2e2e2;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
