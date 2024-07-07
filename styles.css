@@ -1,56 +1,142 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Import the font */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Container class for width constraint */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 1rem 0;
+}
+
+header .logo {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('coverpage.webp') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    background: #444;
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-nav ul li {
-    display: inline;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-nav ul li a {
+.hero .btn {
+    background: #007BFF;
     color: #fff;
     padding: 10px 20px;
-    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #0056b3;
+}
+
+/* Content section styles */
+.content {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.service {
+    background: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #007BFF;
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    background: #555;
-}
-
-main {
-    padding: 20px;
-}
-
-article {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+footer a:hover {
+    text-decoration: underline;
 }
