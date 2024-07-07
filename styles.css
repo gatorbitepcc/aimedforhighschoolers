@@ -75,7 +75,10 @@ header nav ul li a:hover {
 .hero h2 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #ff6347; /* Tomato color */
+    color: #fff; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+    padding: 10px 20px;
+    display: inline-block;
 }
 
 .hero p {
