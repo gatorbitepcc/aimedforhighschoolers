@@ -1,39 +1,22 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global styles */
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
-    background-color: #f9f9f9;
 }
 
-/* Container to center content */
 .container {
     width: 80%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
-/* Header styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 header .logo {
@@ -43,7 +26,9 @@ header .logo {
 
 header nav ul {
     list-style: none;
+    padding: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 header nav ul li {
@@ -53,32 +38,22 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-weight: bold;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Hero section */
 .hero {
     background-image: url('coverpage.webp');
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 150px 0;
     text-align: center;
-    position: relative;
-    top: 50px;
+    padding: 100px 20px;
 }
 
 .hero h2 {
     font-size: 48px;
-    margin-bottom: 20px;
-    color: #fff; /* Text color */
-    background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
-    padding: 10px 20px;
-    display: inline-block;
+    margin-bottom: 10px;
+    color: #ff5722; /* Change the color of the heading */
 }
 
 .hero p {
@@ -87,75 +62,67 @@ header nav ul li a:hover {
 }
 
 .hero .btn {
-    background-color: #ff6347; /* Tomato color */
+    background-color: #ff5722;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
-    font-size: 18px;
-    margin-top: 20px;
-    display: inline-block;
     border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
 .hero .btn:hover {
-    background-color: #e55347; /* Darker tomato color */
+    background-color: #e64a19;
 }
 
-/* Content sections */
 .content {
-    padding: 60px 0;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .content h2 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-    border-bottom: 2px solid #ff6347;
-    display: inline-block;
-    padding-bottom: 10px;
 }
 
 .content p {
     font-size: 18px;
-    text-align: center;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-/* Services section */
 .services {
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.services .service {
+.service {
     background-color: #fff;
     padding: 20px;
-    text-align: center;
-    width: 30%;
-    text-decoration: none;
-    color: #333;
-    border: 2px solid #ff6347;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.services .service h3 {
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #ff6347;
 }
 
-.services .service p {
+.service p {
     font-size: 16px;
-    color: #666;
+    color: #777;
 }
 
-.services .service:hover {
-    background-color: #ffebeb;
-}
-
-/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -163,17 +130,7 @@ footer {
     padding: 20px 0;
 }
 
-footer a {
-    color: #ff6347;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-/* Add these styles to your existing styles.css file */
-
-/* Style for blog buttons */
+/* New Styles for Blog Buttons */
 .blog-list {
     display: flex;
     flex-direction: column;
@@ -198,4 +155,3 @@ footer a:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
 }
-
