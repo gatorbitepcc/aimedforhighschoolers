@@ -110,6 +110,7 @@ header nav {
 /* Services Section */
 #services {
     padding: 20px 0;
+    text-align: center;
 }
 
 .service-item {
