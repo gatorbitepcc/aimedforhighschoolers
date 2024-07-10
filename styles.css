@@ -60,9 +60,10 @@ header nav {
 /* Showcase */
 #showcase {
     min-height: 400px;
-    background: url('coverpage.webp') no-repeat 0 -200px;
+    background: url('coverpage.webp') no-repeat center center/cover;
     text-align: center;
     color: #fff;
+    margin-top: 70px; /* Add margin to offset fixed header */
 }
 
 #showcase h1 {
@@ -80,7 +81,7 @@ header nav {
 #main-content {
     padding: 20px;
     background: #fff;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #main-content h2 {
@@ -129,31 +130,4 @@ header nav {
     transition: background 0.3s ease;
 }
 
-.blogs .blog-item .read-more:hover {
-    background: #cc5200;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: #77aaff;
-    text-decoration: none;
-}
-
-/* Blog Page */
-.blog-image {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-}
+.blogs .blog-item .read-more
