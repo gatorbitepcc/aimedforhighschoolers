@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    padding-top: 70px; /* Added padding to account for fixed header */
 }
 
 h1, h2, h3 {
@@ -63,7 +64,6 @@ header nav {
     background: url('coverpage.webp') no-repeat center center/cover;
     text-align: center;
     color: #fff;
-    margin-top: 70px; /* Add margin to offset fixed header */
 }
 
 #showcase h1 {
@@ -107,6 +107,36 @@ header nav {
     background: #5599ff;
 }
 
+/* Services Section */
+#services {
+    padding: 20px 0;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    color: #ff6600;
+}
+
+.service-item p {
+    color: #333;
+}
+
 /* Blog Section */
 .blogs .blog-item {
     margin-bottom: 20px;
@@ -147,9 +177,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
 footer p {
@@ -159,13 +186,4 @@ footer p {
 footer a {
     color: #77aaff;
     text-decoration: none;
-}
-
-/* Adjust margins for fixed header */
-.content {
-    padding-top: 80px;
-}
-
-section.content {
-    padding: 20px 0;
 }
